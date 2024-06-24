@@ -1,0 +1,133 @@
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f9f9f9;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  padding: 10px 0;
+  color: #333;
+}
+
+a {
+  color: #1976d2;
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+
+  th, td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: left;
+  }
+
+  th {
+    background-color: #f2f2f2;
+  }
+
+  td img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+  }
+}
+
+.character-list {
+  padding: 20px;
+
+  .loading {
+    text-align: center;
+    padding: 20px;
+  }
+}
+
+.character-detail {
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+  margin: 20px auto;
+
+  h1 {
+    font-size: 2em;
+  }
+
+  img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 20px 0;
+    border-radius: 5px;
+  }
+
+  p {
+    font-size: 1.2em;
+    margin: 10px 0;
+  }
+
+  ul {
+    list-style-type: disc;
+    padding-left: 20px;
+
+    li {
+      margin: 5px 0;
+    }
+  }
+}
+
+.infinite-scroll {
+  text-align: center;
+  padding: 20px;
+  font-size: 1.2em;
+  color: #888;
+}
+
+svg {
+  width: 24px;
+  height: 24px;
+  fill: currentColor;
+}
+
+@media (max-width: 768px) {
+  .character-list {
+    padding: 10px;
+  }
+
+  table {
+    display: block;
+    width: 100%;
+    overflow-x: auto;
+
+    th, td {
+      white-space: nowrap;
+    }
+  }
+
+  .character-detail {
+    padding: 10px;
+    margin: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 1.5em;
+  }
+
+  p {
+    font-size: 1em;
+  }
+}
